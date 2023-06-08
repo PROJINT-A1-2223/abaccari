@@ -1,0 +1,93 @@
+package com.example.demo;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class MYUSER {
+
+      @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String firstname;
+    private String lastname;
+
+    private String logins;
+    private String pass;
+
+    private Integer age;
+    private Integer telephone; 
+
+
+
+
+    // Getters and setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getFirstame() {
+        return firstname;
+    }
+
+    public void setFirstame(String name) {
+        this.firstname = name;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String name) {
+        this.lastname = name;
+    }
+
+
+    public String getLogins() {
+        return logins;
+    }
+
+    public void setLogins(String name) {
+        this.logins = name;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String name) {
+        this.pass = name;
+    }
+
+
+    public void setAge(int a)
+    { 
+        this.age=a;
+    }
+    
+
+    public Integer getAge()
+    { 
+        return this.age;
+    }
+    
+
+    public void seTelephone(int a)
+    { 
+        this.telephone=a;
+    }
+    
+
+    public Integer geTelephone()
+    { 
+        return this.telephone;
+    }
+}

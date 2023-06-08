@@ -5,7 +5,7 @@
             "name": "Spring Boot-DemoApplication<demo>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "rideservice.demo.DemoApplication",
+            "mainClass": "com.example.demo.DemoApplication",
             "projectName": "demo",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
